@@ -605,6 +605,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -629,17 +632,14 @@
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
