@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jump;
     public bool isGrounded;
     public Rigidbody playerRB;
+    public int Vida=1;
     // Start is called before the first frame update
     void Start()
     {
