@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         _playerRB.MovePosition(transform.position + transform.forward * _vertMove * Time.fixedDeltaTime);    //se suma al transform de la posicion la fuerza aplicada en el eje tomado segun el fixed delta time
         _playerRB.MoveRotation(angleRot * _playerRB.rotation);            //se multiplica el angulo de rotacion con la rotacion actual del objeto fisico siendo esta constante        
 
-        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())        // fuerza de impulso asociada al eje de salto si sobrepasa cierto umbral del input para que no se "acumulen" saltos y si solo si esta en el suelo
+        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())        // fuerza de impulso asociada al eje de salto si sobrepasa cierto umbral del input para que no se "acumulen" saltos y solo si esta en el suelo
         {
             //Debug.Log(Input.GetAxis("Jump").ToString());
             _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);

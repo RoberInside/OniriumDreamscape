@@ -72,6 +72,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Scripts\Moviles.cs" />
+    <Compile Include="Assets\Scripts\PlatformController.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="UnityEngine">
@@ -603,37 +604,43 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/robe_/Desktop/Repositorios/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Users/Campus FP/Documents/GitHub/OniriumDreamscape/OniriumDreamscape/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
