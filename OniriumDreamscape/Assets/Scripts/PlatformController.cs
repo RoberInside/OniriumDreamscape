@@ -9,13 +9,15 @@ public class PlatformController : MonoBehaviour
     public float _platformSpeed; // se crea un float para guardar la velocidad
 
 
-    private int _actualPosition = 0;
+    private int _actualPosition= 0;
     private int _nextPosition = 1;
 
-    void Update()
+    void FixedUpdate()
     {
         MovePlatform();
     }
+
+    
     void MovePlatform()
     {
         _platformRB.MovePosition(Vector3.MoveTowards(_platformRB.position, _platformPositions[_nextPosition].position, _platformSpeed * Time.deltaTime)); //se usa la funcion MoveTowards para mover la plataforma entre el punto a y el b
@@ -25,11 +27,12 @@ public class PlatformController : MonoBehaviour
         {
             _actualPosition = _nextPosition;
             _nextPosition++;
+
+            if (_nextPosition > _platformPositions.Length -1)
+            {
+                _nextPosition = 0;
+            }
         }
 
-        if (_nextPosition > _platformPositions.Length -1)
-        {
-            _nextPosition = _actualPosition;
-        }
     }
 }
