@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     private float _jumpForce;
     [SerializeField, Range(0, 0.5f)]
     private float distanceToGround = 0.1f;
+    [SerializeField]
+    private Camera _cam;
 
     private Rigidbody _playerRB;
     public LayerMask groundLayer;
@@ -23,21 +25,37 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _playerRB = GetComponent<Rigidbody>();
-        _collider = GetComponent<CapsuleCollider>();       
+        _collider = GetComponent<CapsuleCollider>();
+        _cam = FindObjectOfType<Camera>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        _horiMove = Input.GetAxis("Horizontal") * _rotSpeed;            //se multiplica el eje por la magnitud de la fuerza correspondiente 
-        _vertMove = Input.GetAxis("Vertical") * _speed;        
+        //Eje de la camara
+        Vector3 forward = _cam.transform.forward;
+        Vector3 right = _cam.transform.right;
 
-        Quaternion angleRot = Quaternion.Euler(Vector3.up * _horiMove * Time.fixedDeltaTime);       //se saca el quaternion convertido de un 
-                                                                                                    //euler angles para calcular el angulo de rotacion mas la fuerza que se aplica para dicha rotacion por el tiempo fixed del update
-        _playerRB.MovePosition(transform.position + transform.forward * _vertMove * Time.fixedDeltaTime);    //se suma al transform de la posicion la fuerza aplicada en el eje tomado segun el fixed delta time
-        _playerRB.MoveRotation(angleRot * _playerRB.rotation);            //se multiplica el angulo de rotacion con la rotacion actual del objeto fisico siendo esta constante        
+        forward.Normalize();
+        right.Normalize();
 
-        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())        // fuerza de impulso asociada al eje de salto si sobrepasa cierto umbral del input para que no se "acumulen" saltos y solo si esta en el suelo
+        forward.y = 0;        
+
+        _horiMove = Input.GetAxis("Horizontal");                                                    
+        _vertMove = Input.GetAxis("Vertical");
+
+        Vector3 movement = forward * _vertMove + right * _horiMove; 
+
+                                                                                                             
+        _playerRB.MovePosition(transform.position + movement * _speed * Time.fixedDeltaTime);
+
+        //hace que el quaternion del jugador rote con la camara y con el eje de movimiento
+        if (movement != new Vector3(0f,0f,0f))      // evita que se resetee la orientacion del Quaternion del jugador a 0,0,0 despues de rotar 
+        {
+            _playerRB.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), _rotSpeed));                                                  
+        }
+
+        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())                                                        
         {
             //Debug.Log(Input.GetAxis("Jump").ToString());
             _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
