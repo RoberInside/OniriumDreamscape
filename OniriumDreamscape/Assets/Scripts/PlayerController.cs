@@ -54,13 +54,7 @@ public class PlayerController : MonoBehaviour
         {
             _playerRB.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), _rotSpeed));                                                  
         }
-
-        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())                                                        
-        {
-            //Debug.Log(Input.GetAxis("Jump").ToString());
-            _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
-        }        
-        
+        StartCoroutine("Jump");       
     }
     /// <summary>
     /// Se detecta si el punto del capsule collider mas proximo al limite inferior del mismo esta en contacto con la layer correspondiente.
@@ -72,6 +66,16 @@ public class PlayerController : MonoBehaviour
         Vector3 capsuleBottom = new Vector3(_collider.bounds.center.x, _collider.bounds.min.y, _collider.bounds.center.z);
         bool isGrounded = Physics.CheckCapsule(_collider.bounds.center, capsuleBottom, distanceToGround, groundLayer, QueryTriggerInteraction.Ignore);        
         return isGrounded;
+    }
+
+    IEnumerator Jump()
+    {
+        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())
+        {
+            //Debug.Log(Input.GetAxis("Jump").ToString());
+            _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+        }
+        yield return new WaitForSeconds(1.2f);
     }
 
 
