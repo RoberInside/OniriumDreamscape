@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour
             //Debug.Log(Input.GetAxis("Jump").ToString());
             _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
         }
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds();
     }
 
 
