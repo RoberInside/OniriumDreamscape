@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: plataforma movil
+  m_Name: plataforma movil nvl1
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _DETAIL_MULX2 _EMISSION _NORMALMAP
   m_LightmapFlags: 2
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.9570233, g: 0.3820755, b: 1, a: 1}
-    - _EmissionColor: {r: 0.06698584, g: 0.010507583, b: 0.06698584, a: 1}
+    - _Color: {r: 1, g: 0.19339621, b: 0.93576986, a: 1}
+    - _EmissionColor: {r: 0.0059207673, g: 0.00053403, b: 0.005781455, a: 1}
