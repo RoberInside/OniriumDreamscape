@@ -12,6 +12,8 @@ public class PlatformController : MonoBehaviour
     private int _actualPosition= 0;
     private int _nextPosition = 1;
 
+    private bool _moveNext = true;
+    
     void FixedUpdate()
     {
         MovePlatform();
@@ -20,11 +22,17 @@ public class PlatformController : MonoBehaviour
     
     void MovePlatform()
     {
-        _platformRB.MovePosition(Vector3.MoveTowards(_platformRB.position, _platformPositions[_nextPosition].position, _platformSpeed * Time.deltaTime)); //se usa la funcion MoveTowards para mover la plataforma entre el punto a y el b
+
+        if (_moveNext)
+        {
+            StopCoroutine(WaitMove());
+          _platformRB.MovePosition(Vector3.MoveTowards(_platformRB.position, _platformPositions[_nextPosition].position, _platformSpeed * Time.deltaTime)); //se usa la funcion MoveTowards para mover la plataforma entre el punto a y el b
+        }
 
 
         if (Vector3.Distance(_platformRB.position, _platformPositions[_nextPosition].position) <= 0)
         {
+            StartCoroutine(WaitMove());
             _actualPosition = _nextPosition;
             _nextPosition++;
 
@@ -34,5 +42,12 @@ public class PlatformController : MonoBehaviour
             }
         }
 
+    }
+
+    IEnumerator WaitMove()
+    {
+        _moveNext = false;
+        yield return new WaitForSeconds(0.2f);
+        _moveNext = true;
     }
 }
