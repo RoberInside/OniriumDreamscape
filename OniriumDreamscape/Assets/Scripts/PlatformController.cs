@@ -47,7 +47,7 @@ public class PlatformController : MonoBehaviour
     IEnumerator WaitMove()
     {
         _moveNext = false;
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.3f);
         _moveNext = true;
     }
 }
