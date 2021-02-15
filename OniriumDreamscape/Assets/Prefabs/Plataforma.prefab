@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1347821869766774577}
   - component: {fileID: 2175136674118500647}
   - component: {fileID: 2341934720214909011}
+  - component: {fileID: 1381167352242830297}
   m_Layer: 0
   m_Name: ZBrushPolyMesh3D
   m_TagString: Untagged
@@ -79,6 +80,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1381167352242830297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999192464945492038}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.772373, y: 1.1207265, z: 4.547097}
+  m_Center: {x: -0.029328346, y: -0.14760727, z: -0.01100111}
 --- !u!1 &4113981450768185885
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +102,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3628807258531766439}
-  - component: {fileID: 1298136285465063132}
   - component: {fileID: 885284939265873288}
   m_Layer: 10
   m_Name: Plataforma
@@ -112,19 +125,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1298136285465063132
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4113981450768185885}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.531718, y: 1.2388526, z: 4.472068}
-  m_Center: {x: -0.010394335, y: -0.218131, z: 0.004696846}
 --- !u!54 &885284939265873288
 Rigidbody:
   m_ObjectHideFlags: 0
