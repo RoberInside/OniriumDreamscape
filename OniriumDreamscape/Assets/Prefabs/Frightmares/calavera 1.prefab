@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1079308284346172590}
   - component: {fileID: 171619145608497848}
   - component: {fileID: 4381488740853664716}
+  - component: {fileID: 5248046326952572001}
+  - component: {fileID: 1867720290950769455}
   m_Layer: 0
   m_Name: ZBrushPolyMesh3D
   m_TagString: Untagged
@@ -79,6 +81,32 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &5248046326952572001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572127609640598489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9d29702faab6e45ab6a7e273e23920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  "da\xF1o": 1
+--- !u!65 &1867720290950769455
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572127609640598489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2285637, y: 1.3195304, z: 1.6166962}
+  m_Center: {x: -0.061250564, y: 0.09671631, z: -0.049706455}
 --- !u!1 &2691421562907783554
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +116,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3319725815209503544}
+  - component: {fileID: 6166844361200123500}
   m_Layer: 0
   m_Name: calavera 1
   m_TagString: Untagged
@@ -111,6 +140,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!65 &6166844361200123500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691421562907783554}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0968053, y: 1.295612, z: 1.5128474}
+  m_Center: {x: -0.04840252, y: 0.09975761, z: -0.049388655}
 --- !u!1001 &7944751283669568663
 PrefabInstance:
   m_ObjectHideFlags: 0
