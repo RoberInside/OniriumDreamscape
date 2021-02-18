@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\ControlAnimaciones.cs" />
     <Compile Include="Assets\Scripts\Daño.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Pause_Menu.cs" />
     <Compile Include="Assets\Scripts\PickUps.cs" />
