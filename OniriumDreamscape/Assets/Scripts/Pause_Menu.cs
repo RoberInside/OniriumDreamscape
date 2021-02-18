@@ -6,27 +6,48 @@ using UnityEngine.UI;
 
 public class Pause_Menu : MonoBehaviour
 {
+    [SerializeField]
     public GameObject menuPausaGO;
-    public bool active;
+   
     private void Start()
     {
-        //menuPausaGO = GameObject.Find("MenuPausa");
-        active = menuPausaGO.activeSelf;
+        
     }
 
     void Update()
     {
-        if (!active && Input.GetKeyDown(KeyCode.Escape))
+        if (!menuPausaGO.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
             menuPausaGO.SetActive(true);
+            Time.timeScale = 0;
+           
         }
-        else if (active && Input.GetKeyDown(KeyCode.Escape))
+        else if (menuPausaGO.activeSelf && Input.GetKeyDown(KeyCode.Escape))
         {
-            menuPausaGO.SetActive(false);
+            menuPausaGO.SetActive(false);          
+            Time.timeScale = 1;            
         }
     }
     public void ReturnMainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("MainMenu");
+        Time.timeScale = 1;
+    }
+
+    public void ReanudarGame()
+    {
+        menuPausaGO.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void MuteAudioManager()
+    { }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
+
+
     }
 }
