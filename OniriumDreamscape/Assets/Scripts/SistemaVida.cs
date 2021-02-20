@@ -11,13 +11,17 @@ public class SistemaVida : MonoBehaviour
     public bool inmortal = false;
     public float tiempoInmortal = 1.0f;
 
+    public GameManager gameManagerSC;
+
     private void Start()
     {
         corazon1 = GameObject.Find("Vida1");
         corazon2 = GameObject.Find("Vida2");
         corazon3 = GameObject.Find("Vida3");
 
-        actualVida = maxVida;  
+        actualVida = maxVida;
+
+        gameManagerSC = FindObjectOfType<GameManager>();
     }
     private void Update()
     {
@@ -74,7 +78,7 @@ public class SistemaVida : MonoBehaviour
 
     public void Muerte()
     {
-        Destroy(gameObject);
+        gameManagerSC.GameOver();
     }
 
     IEnumerator TiempoInmortal()
