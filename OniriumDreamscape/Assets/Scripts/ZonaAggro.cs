@@ -7,38 +7,54 @@ public class ZonaAggro : MonoBehaviour
     [SerializeField]
     private float minDistSpeed;
     [SerializeField]
-    private EnemyBehaviour enemyBSC;
+    private List<EnemyBehaviour> enemyBSC;
+
+    public Transform enemiesTF;
     
 
     // Start is called before the first frame update
     void Start()
-    {        
-        enemyBSC = FindObjectOfType<EnemyBehaviour>();        
+    {
+        enemiesTF = GameObject.Find("Enemigos").transform;
+        InitializeZoneEneimes();        
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.GetComponent<PlayerController>())
+        for (int i = 0; i < enemyBSC.Count; i++)
         {
-            enemyBSC.agent.SetDestination(enemyBSC.playerTF.position);
-            if (enemyBSC.agent.remainingDistance > minDistSpeed)
+            if (other.GetComponent<PlayerController>())
             {
-                enemyBSC.agent.speed = 10.0f;
+                enemyBSC[i].agent.SetDestination(enemyBSC[i].playerTF.position);
+                if (enemyBSC[i].agent.remainingDistance > minDistSpeed)
+                {
+                    enemyBSC[i].agent.speed = 10.0f;
+                }
+                else if (enemyBSC[i].agent.remainingDistance < minDistSpeed)
+                {
+                    enemyBSC[i].agent.speed = enemyBSC[i].defaultSpeed;
+                }
+                //Debug.Log("detectado");
             }
-            else if (enemyBSC.agent.remainingDistance < minDistSpeed)
-            {
-                enemyBSC.agent.speed = enemyBSC.defaultSpeed;
-            }
-            //Debug.Log("detectado");
         }
     }
     private void OnTriggerExit(Collider other)
     {
         if (other.GetComponent<PlayerController>())
         {
-            enemyBSC.MoveNextWp();
-            enemyBSC.agent.speed = enemyBSC.defaultSpeed;          
-            
+            for (int i = 0; i < enemyBSC.Count; i++)
+            {
+                enemyBSC[i].MoveNextWp();
+                enemyBSC[i].agent.speed = enemyBSC[i].defaultSpeed;
+            }
+
+        }
+    }
+    void InitializeZoneEneimes()
+    {
+        foreach (Transform en in enemiesTF)
+        {
+            enemyBSC.Add(en.GetComponent<EnemyBehaviour>());
         }
     }
 }

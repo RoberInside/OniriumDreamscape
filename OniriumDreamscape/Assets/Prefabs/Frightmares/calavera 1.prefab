@@ -117,6 +117,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3319725815209503544}
   - component: {fileID: 6166844361200123500}
+  - component: {fileID: -2241157559699308784}
+  - component: {fileID: 6512625797513096786}
   m_Layer: 0
   m_Name: calavera 1
   m_TagString: Untagged
@@ -153,6 +155,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0968053, y: 1.295612, z: 1.5128474}
   m_Center: {x: -0.04840252, y: 0.09975761, z: -0.049388655}
+--- !u!195 &-2241157559699308784
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691421562907783554}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &6512625797513096786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2691421562907783554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd41af329dd75934a82c4a38cbf9754f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxDelay: 0.1
+  playerTF: {fileID: 0}
+  patrolTF: {fileID: 0}
+  agent: {fileID: 0}
+  defaultSpeed: 0
+  waypoints: []
+  currentDelay: 0
 --- !u!1001 &7944751283669568663
 PrefabInstance:
   m_ObjectHideFlags: 0
