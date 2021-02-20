@@ -9,7 +9,7 @@ public class Main_Menu : MonoBehaviour
 
     private void Start()
     {
-        fundidoSC = FindObjectOfType<Fundido>().GetComponent<Fundido>();
+        fundidoSC = FindObjectOfType<Fundido>();
     }
     public void PlayGame()
     {
