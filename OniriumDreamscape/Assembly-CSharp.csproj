@@ -68,7 +68,11 @@
     <Compile Include="Assets\Scripts\Daño.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />
     <Compile Include="Assets\Scripts\EnemyBehaviour.cs" />
-    <Compile Include="Assets\Scripts\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Fundido.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Main_Menu.cs" />
+    <Compile Include="Assets\Scripts\MuteButton.cs" />
+    <Compile Include="Assets\Scripts\PasarNivel.cs" />
     <Compile Include="Assets\Scripts\Pause_Menu.cs" />
     <Compile Include="Assets\Scripts\PickUps.cs" />
     <Compile Include="Assets\Scripts\PlatformController.cs" />
