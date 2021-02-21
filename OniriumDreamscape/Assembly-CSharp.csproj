@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\AudioSettings.cs" />
     <Compile Include="Assets\Scripts\ControlAnimaciones.cs" />
     <Compile Include="Assets\Scripts\Daño.cs" />
     <Compile Include="Assets\Scripts\DontDestroy.cs" />

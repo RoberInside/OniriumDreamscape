@@ -1,36 +1,71 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
-    //public Slider volumeSlider;
-    public AudioSource gameMusic;
-    private float musicVolume= 1f;
-    // Start is called before the first frame update
+    private static readonly string FirstPlay ="First Play";
+    private static readonly string gameMusicPref ="gameMusicPref";
+    private static readonly string SFXPref ="SFXPref";
+   
+    private int firstPlayInt;
+    public Slider gameMusicSlider, SFXSlider;
+    private float gameMusicFloat, SFXFloat;
+    public AudioSource[] BGMusicSounds;
+    public AudioSource[] SFXSounds;
+
     void Start()
     {
-        //gameMusic = GameObject.Find("Audio Source").GetComponent<AudioSource>();
-        gameMusic.Play();
-       // volumeSlider = GameObject.Find("slider volume").GetComponent<Slider>();
-        musicVolume = PlayerPrefs.GetFloat("volume");
-        gameMusic.volume = musicVolume;
-       // volumeSlider.value = musicVolume;
+
+             firstPlayInt = PlayerPrefs.GetInt(FirstPlay); //cuando el usuario juegue por primera vez se mostraran estos valores como default
+
+             if (firstPlayInt == 0)
+             {
+                 gameMusicFloat = 1f;
+                 SFXFloat = 1f;
+                 gameMusicSlider.value = gameMusicFloat;
+                 SFXSlider.value = SFXFloat;
+                 PlayerPrefs.SetFloat(gameMusicPref, gameMusicFloat);
+                 PlayerPrefs.SetFloat(SFXPref, SFXFloat);
+                 PlayerPrefs.SetInt(FirstPlay, -1);
+
+             }
+
+        else
+        {
+            gameMusicFloat = PlayerPrefs.GetFloat(gameMusicPref);
+            gameMusicSlider.value = gameMusicFloat;
+            SFXFloat = PlayerPrefs.GetFloat(SFXPref);
+            SFXSlider.value = SFXFloat;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SaveSoundSettings()
     {
-        PlayerPrefs.SetFloat("volume", musicVolume);
-        gameMusic.volume = musicVolume;
-       // volumeSlider.value = musicVolume;
+        PlayerPrefs.SetFloat(gameMusicPref, gameMusicSlider.value);
+        PlayerPrefs.SetFloat(SFXPref, SFXSlider.value);
     }
 
-     public void ChangeVolume(float volume)
+     void OnApplicationFocus(bool inFocus)
+     {
+        if (!inFocus)
+        {
+            SaveSoundSettings();
+        }
+     }
+
+    public void UpdateSound()
     {
-        musicVolume = volume;
+        for (int i = 0; i < BGMusicSounds.Length; i++)
+        {
+            BGMusicSounds[i].volume = gameMusicSlider.value;
+        }
+        for (int i = 0; i < SFXSounds.Length; i++)
+        {
+            SFXSounds[i].volume = SFXSlider.value;
+        }
     }
 
-    
 }
