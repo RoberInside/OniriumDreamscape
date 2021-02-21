@@ -7,7 +7,7 @@ public class DontDestroy : MonoBehaviour
 {
    
     public GameObject[] musicObj;
-    RectTransform rect;
+    //RectTransform rect;
    private void Awake()
    {
         musicObj = GameObject.FindGameObjectsWithTag("Music");
