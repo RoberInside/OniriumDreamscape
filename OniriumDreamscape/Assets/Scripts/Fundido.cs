@@ -21,11 +21,9 @@ public class Fundido : MonoBehaviour
         StartCoroutine(ChangeScene());
     }
 
-    public void FadeIn()
+    public void FadeOutMainMenu()
     {
-
-        fundido.CrossFadeAlpha(1, 0.5f, false);  //subimos el alpha para hacer el fade out       
-        StartCoroutine(ChangeScene());
+        fundido.CrossFadeAlpha(1, 0.5f, false);         
     }
     IEnumerator ChangeScene()
     {

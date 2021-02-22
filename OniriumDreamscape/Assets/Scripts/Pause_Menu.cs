@@ -8,11 +8,13 @@ public class Pause_Menu : MonoBehaviour
 {
     [SerializeField]
     public GameObject menuPausaGO;
-    public AudioManager muteSC;
+    public MuteButton muteSC;
+    public Fundido fundidoSC;
    
     private void Start()
     {
-        muteSC = GetComponent<AudioManager>(); //acceder al sc de audiomanager para llamar al metodo de mute
+        fundidoSC = GetComponent<Fundido>();      
+        muteSC = GetComponent<MuteButton>(); //acceder al sc de mutebutton para llamar al metodo de mute
     }
 
     void Update()
@@ -32,6 +34,7 @@ public class Pause_Menu : MonoBehaviour
     public void ReturnMainMenu() //Devolver al menú principal
     {
         SceneManager.LoadScene("MainMenu");
+        fundidoSC.FadeOutMainMenu();
         Time.timeScale = 1;
     }
 
@@ -47,4 +50,5 @@ public class Pause_Menu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
     }
+   
 }

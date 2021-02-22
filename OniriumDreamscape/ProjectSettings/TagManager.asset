@@ -8,6 +8,8 @@ TagManager:
   - Platform
   - PlatformMovil
   - PickUpPila
+  - Music
+  - Enemigo
   layers:
   - Default
   - TransparentFX

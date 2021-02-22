@@ -1007,7 +1007,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202559014}
-  m_LocalRotation: {x: 0.08241537, y: 0.00000002970094, z: -0.00000000245617, w: 0.99659806}
+  m_LocalRotation: {x: 0.08241531, y: -0.000000034295695, z: 0.0000000028361387, w: 0.99659806}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.37797, y: 0.37797, z: 0.37797}
   m_Children: []
@@ -1875,7 +1875,7 @@ PrefabInstance:
     - target: {fileID: 6048278021456388853, guid: 7e6c438ccb64dc44f8ebba5372f4a83c,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7334124853339287956, guid: 7e6c438ccb64dc44f8ebba5372f4a83c,
         type: 3}
@@ -2172,7 +2172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481615131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 20.18, z: 233.3}
+  m_LocalPosition: {x: -0.22, y: 3.55, z: -17.869999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1185282048}
@@ -2906,6 +2906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPausaGO: {fileID: 768426886}
   muteSC: {fileID: 0}
+  fundidoSC: {fileID: 0}
 --- !u!114 &734789690
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3024,7 +3025,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fb5edb0511a39934cafc17c42c397625, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 216b821688bcabb47aef21aa0fdd9216, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3174,7 +3175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &768426887
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3999,6 +4000,21 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 4828756162683885847, guid: c815b3e328ecbe54db7125e04bafcb5d,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 5.134511
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828756162683885847, guid: c815b3e328ecbe54db7125e04bafcb5d,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.36370412
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828756162683885847, guid: c815b3e328ecbe54db7125e04bafcb5d,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.29413474
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c815b3e328ecbe54db7125e04bafcb5d, type: 3}
 --- !u!1001 &1084274008
@@ -4511,7 +4527,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1185282046}
-  m_LocalRotation: {x: 0.029129582, y: 0.0000000032248273, z: -9.397776e-11, w: 0.9995757}
+  m_LocalRotation: {x: 0.029129531, y: 0.000000001074942, z: -3.1325855e-11, w: 0.9995757}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5039,11 +5055,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1294653345}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1e95e2dd65766547950c3487422cd88, type: 3}
+  m_Script: {fileID: 11500000, guid: a72092923ff5c974399ab707c202fadf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuPausaGO: {fileID: 768426886}
-  muteSC: {fileID: 0}
 --- !u!114 &1294653348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5088,7 +5102,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1294653347}
-        m_MethodName: MuteAudioManager
+        m_MethodName: MutePressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5396,7 +5410,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311647994}
-  m_LocalRotation: {x: 0.13162138, y: -0.000000008528341, z: 0.0000000011323632, w: 0.9913001}
+  m_LocalRotation: {x: 0.13162145, y: -0.000000019069953, z: 0.0000000025320435, w: 0.99130005}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6600,6 +6614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPausaGO: {fileID: 768426886}
   muteSC: {fileID: 0}
+  fundidoSC: {fileID: 0}
 --- !u!114 &1605256411
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6762,7 +6777,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658556481}
-  m_LocalRotation: {x: 0.08241537, y: 1e-45, z: -0, w: 0.99659806}
+  m_LocalRotation: {x: 0.08241531, y: -0.000000017147842, z: 0.000000001418069, w: 0.99659806}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7566,8 +7581,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.8710554, y: 7.5061536, z: 7.1144843}
-  m_Center: {x: -1.6875494, y: -3.0430758, z: 0.50013494}
+  m_Size: {x: 2.987417, y: 7.506153, z: 7.1144824}
+  m_Center: {x: -1.6293622, y: -3.0430572, z: 0.5001346}
 --- !u!199 &1818286525
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -12298,7 +12313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818286522}
   m_LocalRotation: {x: -0.7141124, y: -0.000000007547671, z: 0.700031, w: 0.00000007460096}
-  m_LocalPosition: {x: -0.32, y: 16.06, z: 246.94}
+  m_LocalPosition: {x: -0.3, y: 16.06, z: 246.07}
   m_LocalScale: {x: 1.0828918, y: 1.0828918, z: 1.0828918}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12474,7 +12489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842800670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.22, y: 18.9, z: 238.1}
+  m_LocalPosition: {x: -0.22, y: 2.27, z: -13.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1580746567}
@@ -17812,7 +17827,7 @@ PrefabInstance:
     - target: {fileID: 6048278021456388853, guid: 7e6c438ccb64dc44f8ebba5372f4a83c,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7334124853339287956, guid: 7e6c438ccb64dc44f8ebba5372f4a83c,
         type: 3}
@@ -17979,6 +17994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPausaGO: {fileID: 768426886}
   muteSC: {fileID: 0}
+  fundidoSC: {fileID: 0}
 --- !u!114 &2114779176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18130,6 +18146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuPausaGO: {fileID: 768426886}
   muteSC: {fileID: 0}
+  fundidoSC: {fileID: 0}
 --- !u!114 &2133888073
 MonoBehaviour:
   m_ObjectHideFlags: 0
