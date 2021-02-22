@@ -130,6 +130,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689630968}
     m_Modifications:
+    - target: {fileID: 572127609640598489, guid: d25d25e39b6fb1848bc7d269b94fbe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 2691421562907783554, guid: d25d25e39b6fb1848bc7d269b94fbe41,
         type: 3}
       propertyPath: m_Name
@@ -2629,6 +2634,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689630968}
     m_Modifications:
+    - target: {fileID: 572127609640598489, guid: d25d25e39b6fb1848bc7d269b94fbe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 2691421562907783554, guid: d25d25e39b6fb1848bc7d269b94fbe41,
         type: 3}
       propertyPath: m_Name
@@ -3044,6 +3054,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689630968}
     m_Modifications:
+    - target: {fileID: 572127609640598489, guid: d25d25e39b6fb1848bc7d269b94fbe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 2691421562907783554, guid: d25d25e39b6fb1848bc7d269b94fbe41,
         type: 3}
       propertyPath: m_Name
@@ -3426,6 +3441,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689630968}
     m_Modifications:
+    - target: {fileID: 572127609640598489, guid: d25d25e39b6fb1848bc7d269b94fbe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 2691421562907783554, guid: d25d25e39b6fb1848bc7d269b94fbe41,
         type: 3}
       propertyPath: m_Name
@@ -5709,6 +5729,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689630968}
     m_Modifications:
+    - target: {fileID: 572127609640598489, guid: d25d25e39b6fb1848bc7d269b94fbe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 2691421562907783554, guid: d25d25e39b6fb1848bc7d269b94fbe41,
         type: 3}
       propertyPath: m_Name
@@ -7061,6 +7086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   colliderPortal: {fileID: 0}
   gameManagerSC: {fileID: 0}
+  audiomanagerSC: {fileID: 0}
 --- !u!65 &1229965748
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11847,6 +11873,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 689630968}
     m_Modifications:
+    - target: {fileID: 572127609640598489, guid: d25d25e39b6fb1848bc7d269b94fbe41,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     - target: {fileID: 2691421562907783554, guid: d25d25e39b6fb1848bc7d269b94fbe41,
         type: 3}
       propertyPath: m_Name

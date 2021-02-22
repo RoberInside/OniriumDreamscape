@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject playerGO;
     void Start()
     {
+
         fundidoSC = FindObjectOfType<Fundido>();
         playerGO = GameObject.FindGameObjectWithTag("Player");
     }
@@ -20,11 +21,10 @@ public class GameManager : MonoBehaviour
     }
     public void SiguienteNivel()
     {
-        fundidoSC.FadeOut();
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        fundidoSC.FadeOut();       
     }
     void Update()
     {
-        
+      
     }
 }

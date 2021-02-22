@@ -20,7 +20,7 @@ public class Pause_Menu : MonoBehaviour
     void Update()
     {
         if (!menuPausaGO.activeSelf && Input.GetKeyDown(KeyCode.Escape)) //lee el estado del menu (false) y si presionan la tecla esc lo cambia a true y se activa el menu
-        {
+        {          
             menuPausaGO.SetActive(true);
             Time.timeScale = 0; //paramos el tiempo mientras esté activo el menú de pausa
            

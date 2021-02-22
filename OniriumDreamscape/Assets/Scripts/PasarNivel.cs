@@ -6,8 +6,10 @@ public class PasarNivel : MonoBehaviour
 {
     public GameObject colliderPortal;
     public GameManager gameManagerSC;
+    public AudioSettings audiomanagerSC;
     void Start()
     {
+        audiomanagerSC = FindObjectOfType<AudioSettings>();
         colliderPortal = GameObject.Find("Portal");
         gameManagerSC = FindObjectOfType<GameManager>();
     }
@@ -15,14 +17,13 @@ public class PasarNivel : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
         if (other.CompareTag("Player"))
         {
             gameManagerSC.SiguienteNivel();
+            audiomanagerSC.PlayPortal();
         }
 
     }
-    void Update()
-    {
-        
-    }
+
 }

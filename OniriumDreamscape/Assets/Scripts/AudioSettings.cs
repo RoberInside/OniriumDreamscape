@@ -39,4 +39,10 @@ public class AudioSettings : MonoBehaviour
         SFXSounds[1].loop = false;
         SFXSounds[1].Play();
     }
+
+    public void PlayPortal()
+    {
+        SFXSounds[2].loop = false;
+        SFXSounds[2].Play();
+    }
 }

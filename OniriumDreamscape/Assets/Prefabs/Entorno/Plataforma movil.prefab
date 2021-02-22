@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1438532219012368300}
-  - component: {fileID: 3722583005306964439}
   - component: {fileID: 3306632107643171459}
   m_Layer: 10
   m_Name: Plataforma movil
@@ -33,19 +32,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &3722583005306964439
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1782688517162245398}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.6108217, y: 1.1966352, z: 4.5300446}
-  m_Center: {x: 0.035850048, y: -0.3054738, z: -0.029184341}
 --- !u!54 &3306632107643171459
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -73,6 +59,7 @@ GameObject:
   - component: {fileID: 3683594089157716026}
   - component: {fileID: 4577080883173451308}
   - component: {fileID: 84043024658245464}
+  - component: {fileID: 6389942032956477650}
   m_Layer: 0
   m_Name: ZBrushPolyMesh3D
   m_TagString: Untagged
@@ -101,7 +88,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4185008864757569357}
-  m_Mesh: {fileID: 9078221125172078032, guid: e609226957885844b826da56a0134a6e, type: 3}
+  m_Mesh: {fileID: 9078221125172078032, guid: 70eef3a391967e64b8fd1706d224bdd8, type: 3}
 --- !u!23 &84043024658245464
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -141,3 +128,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &6389942032956477650
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4185008864757569357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.479539, y: 1.5097625, z: 4.197653}
+  m_Center: {x: 0.007083297, y: -0.37711513, z: -0.078564644}
