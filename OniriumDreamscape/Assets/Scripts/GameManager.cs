@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public Fundido fundidoSC;
     public GameObject playerGO;
-
     
     void Start()
     {
