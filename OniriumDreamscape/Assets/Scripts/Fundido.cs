@@ -23,7 +23,7 @@ public class Fundido : MonoBehaviour
 
     public void FadeOutMainMenu()
     {
-        fundido.CrossFadeAlpha(1, 0.5f, false);         
+        fundido.CrossFadeAlpha(1, 0.5f, false);
     }
     IEnumerator ChangeScene()
     {

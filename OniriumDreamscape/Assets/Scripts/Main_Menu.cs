@@ -9,6 +9,7 @@ public class Main_Menu : MonoBehaviour
 
     private void Start()
     {
+        Cursor.visible = true;
         fundidoSC = FindObjectOfType<Fundido>().GetComponent<Fundido>();
     }
     public void PlayGame()

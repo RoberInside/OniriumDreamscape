@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 4577080883173451308}
   - component: {fileID: 84043024658245464}
   - component: {fileID: 6389942032956477650}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ZBrushPolyMesh3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}

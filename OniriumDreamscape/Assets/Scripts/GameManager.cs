@@ -7,9 +7,10 @@ public class GameManager : MonoBehaviour
 {
     public Fundido fundidoSC;
     public GameObject playerGO;
+
+    
     void Start()
     {
-
         fundidoSC = FindObjectOfType<Fundido>();
         playerGO = GameObject.FindGameObjectWithTag("Player");
     }
@@ -25,6 +26,9 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-      
+        if (Time.timeScale == 1)
+        {
+            Cursor.visible = false;
+        }
     }
 }
