@@ -7,17 +7,21 @@ public class GameManager : MonoBehaviour
 {
     public Fundido fundidoSC;
     public GameObject playerGO;
-    
+    public GameObject pantallaGameOverGO;
+
     void Start()
     {
         fundidoSC = FindObjectOfType<Fundido>();
         playerGO = GameObject.FindGameObjectWithTag("Player");
+        pantallaGameOverGO = FindObjectOfType<Timer>().transform.GetChild(0).transform.GetChild(7).gameObject;
     }
 
     public void GameOver()
     {
+        pantallaGameOverGO.SetActive(true);
+        Cursor.visible = true;
         playerGO.SetActive(false);
-
+        Time.timeScale = 0;
     }
     public void SiguienteNivel()
     {

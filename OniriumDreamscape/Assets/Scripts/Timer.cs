@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public Slider timeSlider;
     public Text timerText;
     public float gameTime;
     public float actualTime;
@@ -13,18 +12,19 @@ public class Timer : MonoBehaviour
     public float intensidadFinal;
 
     private bool stopTimer;
+    public GameManager gameManagerSC;
 
-     void Start()
+    void Start()
     {
         actualTime = gameTime;
         stopTimer = false;
-        luzOso = FindObjectOfType<PlayerController>().transform.GetChild(0).transform.GetChild(2).GetComponent<Light>();       
-        
+        luzOso = FindObjectOfType<PlayerController>().transform.GetChild(0).transform.GetChild(2).GetComponent<Light>();
+        gameManagerSC = FindObjectOfType<GameManager>();
+
     }
      void Update()
     {
-        timeSlider.maxValue = gameTime;
-        timeSlider.value = actualTime;
+        
 
 
         float time = gameTime - Time.time;
@@ -37,17 +37,23 @@ public class Timer : MonoBehaviour
 
         if (time <=0)
         {
+            Muerte();
             stopTimer = true;
+            
         }
 
         if (stopTimer == false)
         {
             timerText.text = textTime;
-            timeSlider.value = time;
+            
         }
     }
     void IntensidadMuerte(float n)
     {
         luzOso.intensity = Mathf.Lerp(1.4f, 0.3f, n);        
+    }
+    public void Muerte()
+    {
+        gameManagerSC.GameOver();
     }
 }

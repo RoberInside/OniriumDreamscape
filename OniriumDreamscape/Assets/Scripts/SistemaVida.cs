@@ -32,10 +32,10 @@ public class SistemaVida : MonoBehaviour
 
         if (actualVida<=0)
         {
-            Muerte();
             corazon1.SetActive(false);
             corazon2.SetActive(false);
             corazon3.SetActive(false);
+            Muerte();
         }
 
         if (actualVida==1)
