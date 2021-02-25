@@ -50,8 +50,8 @@ public class Pause_Menu : MonoBehaviour
 
     public void RestartLevel() //reiniciar el nivel
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Time.timeScale = 1;
+        _gM.RestartLevel();
+        
     }
    
 }

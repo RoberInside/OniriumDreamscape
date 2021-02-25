@@ -20,8 +20,7 @@ public class GameManager : MonoBehaviour
     {
         pantallaGameOverGO.SetActive(true);
         Cursor.visible = true;
-        playerGO.SetActive(false);
-        Time.timeScale = 0;
+        playerGO.SetActive(false);        
     }
     public void SiguienteNivel()
     {
@@ -33,5 +32,12 @@ public class GameManager : MonoBehaviour
         {
             Cursor.visible = false;
         }
+    }
+    public void RestartLevel() //reiniciar el nivel
+    {
+        Time.timeScale = 1;
+       
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+       
     }
 }

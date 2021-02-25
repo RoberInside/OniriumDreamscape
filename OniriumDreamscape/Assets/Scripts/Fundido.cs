@@ -30,6 +30,6 @@ public class Fundido : MonoBehaviour
         yield return new WaitForSeconds(1);  //hacemos una corrutina para que haya un segundo de espera entre escena y escena
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
         fundido.CrossFadeAlpha(0, 0.5f, false);  //Bajamos el alpha para hacer el fade in
-        //SceneManager.LoadScene("Nivel 1");
+        
     }
 }

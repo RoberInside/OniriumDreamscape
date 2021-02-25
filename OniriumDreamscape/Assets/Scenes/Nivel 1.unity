@@ -4358,7 +4358,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.972549}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -12443,7 +12443,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985396042}
   serializedVersion: 6
-  lengthInSec: 10
+  lengthInSec: 120
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -12518,7 +12518,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 120
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -16167,7 +16167,7 @@ ParticleSystem:
   LightsModule:
     enabled: 1
     ratio: 1
-    light: {fileID: 997066040}
+    light: {fileID: 0}
     randomDistribution: 1
     color: 1
     range: 1

@@ -5687,7 +5687,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962368400}
-  m_LocalRotation: {x: 0.082415275, y: 0.0000017308766, z: -0.00000014313761, w: 0.9965981}
+  m_LocalRotation: {x: 0.082415275, y: 0.0000017651723, z: -0.00000014597374, w: 0.9965981}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -7133,7 +7133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212607854}
-  m_LocalRotation: {x: 0.029129505, y: 0.0000017499848, z: -0.000000050997826, w: 0.9995757}
+  m_LocalRotation: {x: 0.029129507, y: 0.0000017537408, z: -0.000000051107286, w: 0.9995757}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12506,7 +12506,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268678816}
-  m_LocalRotation: {x: 0.08241527, y: 0.0000017129342, z: -0.00000014165383, w: 0.9965981}
+  m_LocalRotation: {x: 0.08241527, y: 0.0000017831147, z: -0.00000014745753, w: 0.9965981}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.37797, y: 0.37797, z: 0.37797}
   m_Children: []
@@ -17436,7 +17436,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985396042}
   serializedVersion: 6
-  lengthInSec: 10
+  lengthInSec: 120
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -17511,7 +17511,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 120
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -17618,7 +17618,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.81037736, g: 0.759434, b: 1, a: 1}
+      maxColor: {r: 1, g: 0.88103706, b: 0.5990566, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -21160,7 +21160,7 @@ ParticleSystem:
   LightsModule:
     enabled: 1
     ratio: 1
-    light: {fileID: 997066040}
+    light: {fileID: 0}
     randomDistribution: 1
     color: 1
     range: 1
