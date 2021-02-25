@@ -5869,7 +5869,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311647994}
-  m_LocalRotation: {x: 0.13162145, y: 0.000000019069953, z: -0.0000000025320435, w: 0.99130005}
+  m_LocalRotation: {x: 0.13162145, y: -0.000000019069955, z: 0.0000000025320437, w: 0.99130005}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5907,7 +5907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 285946446}
-  gameTime: 90
+  gameTime: 0
   actualTime: 0
   luzOso: {fileID: 0}
   intensidadFinal: 0
@@ -13433,7 +13433,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985396042}
   serializedVersion: 6
-  lengthInSec: 10
+  lengthInSec: 120
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -13508,7 +13508,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 120
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -13615,7 +13615,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.81037736, g: 0.759434, b: 1, a: 1}
+      maxColor: {r: 0.8529508, g: 1, b: 0.7688679, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
