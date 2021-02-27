@@ -18,9 +18,10 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        //Cursor.visible = true;
         pantallaGameOverGO.SetActive(true);
-        Cursor.visible = true;
-        playerGO.SetActive(false);        
+        playerGO.SetActive(false);
+        Time.timeScale = 0;
     }
     public void SiguienteNivel()
     {
@@ -32,12 +33,14 @@ public class GameManager : MonoBehaviour
         {
             Cursor.visible = false;
         }
+        else if (Time.timeScale == 0) 
+        {        
+            Cursor.visible = true;
+        }
     }
     public void RestartLevel() //reiniciar el nivel
     {
-        Time.timeScale = 1;
-       
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-       
+        Time.timeScale = 1;       
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);       
     }
 }

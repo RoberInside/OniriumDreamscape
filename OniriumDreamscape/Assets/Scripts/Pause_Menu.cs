@@ -29,10 +29,7 @@ public class Pause_Menu : MonoBehaviour
             Time.timeScale = 0; //paramos el tiempo mientras esté activo el menú de pausa
            
         }
-        //else if (menuPausaGO.activeSelf && Input.GetKeyDown(KeyCode.Escape)) //lee el estado del menu (true) y si vuelven a presionar esc lo cambia a false y se desactiva
-        //{
-        //    ReanudarGame();                      
-        //}
+        
     }
     public void ReturnMainMenu() //Devolver al menú principal
     {
