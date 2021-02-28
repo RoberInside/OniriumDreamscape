@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "da\xF1o": 3
+  audioManagerSC: {fileID: 0}
 --- !u!1 &4189491947355790169
 GameObject:
   m_ObjectHideFlags: 0
