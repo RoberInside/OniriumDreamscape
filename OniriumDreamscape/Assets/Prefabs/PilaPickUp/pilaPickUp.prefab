@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5310839820824047348}
   - component: {fileID: 3293353672959756277}
   m_Layer: 0
-  m_Name: PILAAAA 1
+  m_Name: pilaPickUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,3 +108,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSC: {fileID: 0}
   vida: 1
+  audioManagerSC: {fileID: 0}
