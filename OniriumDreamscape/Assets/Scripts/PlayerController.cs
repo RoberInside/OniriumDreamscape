@@ -15,9 +15,9 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Camera _cam;
 
-    private Rigidbody _playerRB;
     public LayerMask groundLayer;
 
+    private Rigidbody _playerRB;
     private float _horiMove, _vertMove, _jumpAxis;      
     private CapsuleCollider _collider;   
 
@@ -39,22 +39,28 @@ public class PlayerController : MonoBehaviour
         forward.Normalize();
         right.Normalize();
 
-        forward.y = 0;        
+        forward.y = 0;              //fija el eje y de rotacion pàra que nos e inclineal tranformar el movimiento.      
 
         _horiMove = Input.GetAxis("Horizontal");                                                    
         _vertMove = Input.GetAxis("Vertical");
 
         Vector3 movement = forward * _vertMove + right * _horiMove; 
-
                                                                                                              
-        _playerRB.MovePosition(transform.position + movement * _speed * Time.fixedDeltaTime);
+        _playerRB.MovePosition(transform.position + movement * _speed * Time.fixedDeltaTime);   //mueve la posicion del jugador con respecto a la camara
 
         //hace que el quaternion del jugador rote con la camara y con el eje de movimiento
         if (movement != new Vector3(0f,0f,0f))      // evita que se resetee la orientacion del Quaternion del jugador a 0,0,0 despues de rotar 
         {
-            _playerRB.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), _rotSpeed));                                                  
+            _playerRB.MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), _rotSpeed));     //Rota el jugador interpolando valores de manera 
+                                                                                                                            //esferica conforme a donde 
+                                                                                                                            //apunta el transform del movimiento del jugador + la camara(movement) con una velocidad de rotacion.                                               
         }
-        StartCoroutine("Jump");       
+        //salto del jugador solo si esta tocando el suelo.
+        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())
+        {
+             _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
+        }
+           
     }
     /// <summary>
     /// Se detecta si el punto del capsule collider mas proximo al limite inferior del mismo esta en contacto con la layer correspondiente.
@@ -67,17 +73,4 @@ public class PlayerController : MonoBehaviour
         bool isGrounded = Physics.CheckCapsule(_collider.bounds.center, capsuleBottom, distanceToGround, groundLayer, QueryTriggerInteraction.Ignore);        
         return isGrounded;
     }
-
-    IEnumerator Jump()
-    {
-        if (Input.GetAxis("Jump") > 0.5 && IsGrounded())
-        {
-            //Debug.Log(Input.GetAxis("Jump").ToString());
-            _playerRB.AddForce(Vector3.up * _jumpForce, ForceMode.Impulse);
-        }
-        yield return new WaitForSeconds(1.2f);
-    }
-
-
-
 }
