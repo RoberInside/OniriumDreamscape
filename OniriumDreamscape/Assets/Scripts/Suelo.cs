@@ -15,7 +15,7 @@ public class Suelo : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) 
     {
         
         if (other.gameObject.GetComponent<SistemaVida>() != null)
@@ -23,7 +23,7 @@ public class Suelo : MonoBehaviour
             StartCoroutine(TiempoInmortal());
 
 
-            other.gameObject.GetComponent<SistemaVida>().QuitarVida(3);
+            other.gameObject.GetComponent<SistemaVida>().QuitarVida(3); //Al haber subido el daño al numero maximo de vidas y entrar en contacto con el collider del "suelo" se realiza una instakill
         }
     }
     IEnumerator TiempoInmortal()

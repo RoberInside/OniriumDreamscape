@@ -2745,9 +2745,9 @@ MonoBehaviour:
   m_XAxis:
     Value: 0
     m_SpeedMode: 0
-    m_MaxSpeed: 300
-    m_AccelTime: 0.2
-    m_DecelTime: 0.2
+    m_MaxSpeed: 200
+    m_AccelTime: 0.1
+    m_DecelTime: 0.1
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
@@ -28445,7 +28445,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1311647994}
-  m_LocalRotation: {x: 0.13160841, y: 0.01394596, z: -0.0018516972, w: 0.99120194}
+  m_LocalRotation: {x: 0.13160841, y: 0.013945999, z: -0.0018517021, w: 0.99120194}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

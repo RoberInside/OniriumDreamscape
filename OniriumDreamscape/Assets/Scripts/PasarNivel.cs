@@ -15,7 +15,7 @@ public class PasarNivel : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //Al entrar en contacto con el collider del portal se reproduce un sonido y llama al metodo siguiente nivel del game manager
     {
 
         if (other.CompareTag("Player"))

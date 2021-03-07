@@ -40,6 +40,7 @@ public class Pause_Menu : MonoBehaviour
 
     public void ReanudarGame() //reanudar el juego, se desactiva el menu de pausa
     {
+        Cursor.visible=false;
         Time.timeScale = 1;        
         menuPausaGO.SetActive(false);
     }

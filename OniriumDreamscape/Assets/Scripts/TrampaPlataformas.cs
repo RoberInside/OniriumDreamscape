@@ -13,7 +13,7 @@ public class TrampaPlataformas : MonoBehaviour
         puasRB = GetComponentInChildren<Rigidbody>();
         _constraint = puasRB.constraints;
 
-        puasRB.constraints = RigidbodyConstraints.FreezePositionY;
+        puasRB.constraints = RigidbodyConstraints.FreezePositionY; //Congelamos la plataforma mediante el contraint de Y para evitar que se caiga la misma
 
     }
 
@@ -22,7 +22,7 @@ public class TrampaPlataformas : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //Al pasar por el trigger activa la corrutina del tiempo que falta para que caiga la plataforma
     {
         if (other.CompareTag("Player"))
         {
@@ -31,7 +31,7 @@ public class TrampaPlataformas : MonoBehaviour
         
     }
     
-    IEnumerator TiempoCaida()
+    IEnumerator TiempoCaida() //Una vez acabado el timpo de espera desactiva el constraint que evita que la plataforma de pinchos caiga sobre el jugador.
     {
         
         yield return new WaitForSeconds(_tiempoCaida);
