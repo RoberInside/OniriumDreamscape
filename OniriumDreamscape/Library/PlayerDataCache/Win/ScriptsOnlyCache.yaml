@@ -39,10 +39,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -102,13 +100,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13444}
+      Script: {instanceID: 13446}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13748}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -225,19 +223,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13400}
+      Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 13670}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13680}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13726}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13748}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -370,21 +368,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13400}
+      Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 13570}
+      Script: {instanceID: 13572}
     - Class: 114
-      Script: {instanceID: 13670}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13680}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13726}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13748}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -517,21 +515,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13138}
     - Class: 114
-      Script: {instanceID: 13280}
-    - Class: 114
-      Script: {instanceID: 13400}
+      Script: {instanceID: 13282}
     - Class: 114
       Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 13670}
+      Script: {instanceID: 13404}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13672}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13680}
     - Class: 114
-      Script: {instanceID: 13724}
+      Script: {instanceID: 13706}
     - Class: 114
-      Script: {instanceID: 13746}
+      Script: {instanceID: 13726}
+    - Class: 114
+      Script: {instanceID: 13748}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -614,11 +612,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13080}
     - Class: 114
-      Script: {instanceID: 13280}
+      Script: {instanceID: 13282}
     - Class: 114
-      Script: {instanceID: 13400}
+      Script: {instanceID: 13402}
     - Class: 114
-      Script: {instanceID: 13704}
+      Script: {instanceID: 13706}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1589,4 +1587,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Nivel 2.unity
   - Assets/Scenes/Nivel 3.unity
   - Assets/Scenes/PantallaWin.unity
-  playerPath: C:/Users/tdi/Desktop/Karonte/Build/Onirium Dreamscape.exe
+  playerPath: D:/Juego Final/OniriumDreamscape/OniriumDreamscape/Builds/Onirium Dreamscape.exe

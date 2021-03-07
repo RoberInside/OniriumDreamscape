@@ -26,6 +26,7 @@ public class Pause_Menu : MonoBehaviour
         {
 
             menuPausaGO.SetActive(true);
+            Cursor.visible = true;
             Time.timeScale = 0; //paramos el tiempo mientras esté activo el menú de pausa
            
         }
