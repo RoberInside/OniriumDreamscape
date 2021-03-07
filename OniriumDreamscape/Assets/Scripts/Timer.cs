@@ -7,15 +7,16 @@ public class Timer : MonoBehaviour
 {
     public float gameTime;
     public GameManager gameManagerSC;
+    public Text timerText;
 
-    private Text timerText;
     private Light luzOso;       // Luz asociada el gameobject Oso
-    private bool stopTimer;
+    public bool stopTimer;
 
     void Start()
     {        
         luzOso = FindObjectOfType<PlayerController>().transform.GetChild(0).transform.GetChild(2).GetComponent<Light>();
         gameManagerSC = FindObjectOfType<GameManager>();
+        timerText = FindObjectOfType<Timer>().transform.GetChild(0).transform.GetChild(3).transform.GetChild(1).GetComponent<Text>();
         gameTime = 60;       
         stopTimer = false;
 
