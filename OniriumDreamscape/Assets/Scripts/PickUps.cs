@@ -20,7 +20,7 @@ public class PickUps : MonoBehaviour
         if (other.gameObject.GetComponent<SistemaVida>() != null)
         {
             other.gameObject.GetComponent<SistemaVida>().DarVida(vida);
-            timerSC.gameTime += 60;            
+            timerSC.gameTime += 30;            
         }
         Destroy(this.gameObject);
     }
