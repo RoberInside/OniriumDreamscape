@@ -44,7 +44,7 @@ public class AudioManager : MonoBehaviour
 
     public void SaveSoundSettings()
     {
-        PlayerPrefs.SetFloat(gameMusicPref, gameMusicSlider.value); //este método nos sirve para guardar esos valores o preferencias que nos ha indicado el jugador
+        PlayerPrefs.SetFloat(gameMusicPref, gameMusicSlider.value); //este método nos sirve para guardar esos valores o preferencias que nos ha indicado el jugador. salta error en el edito, como si no recogiera las preferencias del jugador, pero sí que lo hace siempre
         PlayerPrefs.SetFloat(SFXPref, SFXSlider.value);
     }
 

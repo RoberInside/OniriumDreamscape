@@ -8,7 +8,6 @@ public class Pause_Menu : MonoBehaviour
 {
     [SerializeField]
     private GameObject menuPausaGO;
-    private MuteButton muteSC;
     private Fundido fundidoSC;
     private GameManager _gM;
 
@@ -16,8 +15,7 @@ public class Pause_Menu : MonoBehaviour
     private void Start()
     {
         _gM = FindObjectOfType<GameManager>();
-        fundidoSC = GetComponent<Fundido>();      
-        muteSC = GetComponent<MuteButton>(); //acceder al sc de mutebutton para llamar al metodo de mute
+        fundidoSC = FindObjectOfType<Fundido>();             
     }
 
     void Update()
